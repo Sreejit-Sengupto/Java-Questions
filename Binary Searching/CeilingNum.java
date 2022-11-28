@@ -15,7 +15,7 @@ public class CeilingNum {
         System.out.println("Enter" + " " + size + " " + "elements in the Array: ");
         for (int i = 0; i < size; i++) {
             if (i == 0){
-                System.out.println("Enter the element");
+                System.out.println("Enter the first element");
             } else{
                 System.out.println("Enter the next element");
             }
@@ -23,12 +23,13 @@ public class CeilingNum {
         }
 
         /* Enter the target element */
-        System.out.println("Enter the value whose ceiling and floor is to be found!");
+        System.out.print("Enter the value whose ceiling and floor is to be found: ");
         int target = input.nextInt();
 
         int ceiling = findCeiling(array, target); // Passing the array and the target value in the findCeiling() function and storing it in a variable
         int floor = findFloor(array, target); // Passing the array and the target value in the findFloor() function and storing it in a variable
 
+        /* Printing the output */
         if (ceiling == -1){
             System.out.println("Ceiling: No such numbers exist");
         } else {
