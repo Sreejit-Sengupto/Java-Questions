@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class SelectionSort {
     public static void main(String[] args) {
-        int[] array = {4, 5, 1, 2, 3};
+        int[] array = {4000, 3000, 1000, 2000};
         selectionSort(array);
         System.out.println(Arrays.toString(array));
     }
@@ -16,11 +16,9 @@ public class SelectionSort {
     }
 
     static void swap(int[] arr, int first, int end) {
-        for (int i = 0; i < arr.length; i++) {
             int temp = arr[first];
             arr[first] = arr[end];
             arr[end] = temp;
-        }
     }
 
     static int getMax(int[] arr, int start, int end) {
